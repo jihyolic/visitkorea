@@ -231,9 +231,9 @@
         }
         .keyword__columns {
           padding-bottom: 32px;
+
           .keyword__column {
             flex: 1;
-            // border: 1px solid blue;
 
             .keyword__item {
               padding-left: 28px;
@@ -305,10 +305,12 @@
       line-height: 62px;
       flex: 1;
       text-align: center;
+
       .bottom-menu__item-link {
         display: block;
         font-size: 18px;
         color: #000;
+        position: relative;
       }
       .bottom-menu__item-link--home {
         position: relative;
@@ -324,6 +326,29 @@
         position: absolute;
         bottom: 20px;
         left: 125px;
+      }
+      .bottom-menu__item-link--home::after {
+        z-index: -1;
+        content: "";
+        display: inline-block;
+        width: 83px;
+        height: 4px;
+        background-color: $color-primary;
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .bottom-menu__item-link:hover::after {
+        content: "";
+        display: inline-block;
+        width: 83px;
+        height: 4px;
+        background-color: $color-primary;
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transform: translateX(-50%);
       }
       .fa-caret-down {
         font-size: 11px;
