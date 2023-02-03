@@ -18,11 +18,9 @@ img {
     box-shadow: transparent;
   }
   .gnb__top .container {
-    background-color: red;
     width: 100%;
   }
   .gnb__top .container .gnb__top-hamburger {
-    background-color: yellow;
     width: 100%;
     display: block;
     text-align: right;
@@ -46,12 +44,11 @@ img {
 .swiper {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +61,26 @@ img {
   object-fit: cover;
 }
 
+.swiper-pagination-progressbar {
+  width: 940px !important;
+  position: absolute;
+  top: 88% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background-color: rgba(255, 255, 255, 0.232) !important;
+}
+
+.swiper-pagination-progressbar-fill {
+  background-color: white !important;
+}
+
+.button {
+  background-color: transparent;
+  border: 0;
+  color: #333;
+  cursor: pointer;
+}
+
 .wrap {
   font-family: "Noto Sans KR";
 }
@@ -74,13 +91,6 @@ img {
 
 .align-center {
   align-items: center;
-}
-
-.button {
-  background-color: transparent;
-  border: 0;
-  color: #333;
-  cursor: pointer;
 }
 
 .container {
@@ -339,7 +349,6 @@ img {
 
 .gnb__bottom {
   height: 65px;
-  border-bottom: 1px solid #f0f0f0;
 }
 .gnb__bottom .gnb__bottom-menu {
   height: 100%;
