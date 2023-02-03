@@ -1,96 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>대한민국 구석구석</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <!-- 스크립트 -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="./script/script,.js"></script>
+    <script src="./script/script.js"></script>
+    <!-- 폰트어썸 -->
+    <script
+      src="https://kit.fontawesome.com/8a1caa8655.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <div class="wrap">
-    <header class="gnb">
-      <div class="gnb-top">
-        <div class="inner">
-          <div class="gnb__bar--pc">
-            <a href="#"><img src="./img/gnb_allmenu.gif" alt="메뉴바" /></a>
-          </div>
-          <div class="gnb__bar--mo">
-            <a href="#"><img src="./img/gnb_allmenu_w.png" alt="메뉴바" /></a>
-          </div>
-          <div class="top-menu">
-            <ul class="top-menu__main">
-              <li class="main-list main-icon1"><a href="#">특집관</a></li>
-              <li class="main-list active main-icon2">
-                <a href="#">홈</a>
-                <ul class="top-menu__sub">
-                  <li class="sub-list"><a href="#">인기</a></li>
-                  <li class="sub-list"><a href="#">코스</a></li>
-                  <li class="sub-list"><a href="#">축제</a></li>
-                  <li class="sub-list"><a href="#">이벤트</a></li>
-                  <li class="sub-list"><a href="#">지역</a></li>
-                </ul>
-              </li>
-              <li class="main-list main-icon3">
-                <a href="#">여행상품 홍보관</a>
-              </li>
-              <li class="main-list main-icon4"><a href="#">여행구독</a></li>
-            </ul>
-            <div class="login">
-              <div class="login__profile">
-                <a href="#"><img src="./img/gnb_profile.png" alt="" /></a>
-              </div>
-              <div class="login__btn">
-                <a href="#"
-                  >로그인 하세요 <img src="./img/gnb_allmenu_arrow.png" alt=""
-                /></a>
+  <body>
+    <div class="wrap">
+      <header class="gnb">
+        <div class="gnb__top">
+          <div class="container flex align-center">
+            <button class="gnb__top-hamburger button">
+              <i class="fa-sharp fa-solid fa-bars"></i>
+            </button>
+            <div class="gnb__top-hamburger-menu">
+              <ul class="hamburger-menu">
+                <li class="hamburger-menu__item">
+                  <a href="#" class="hamburger-menu__item-link">특집관</a>
+                </li>
+                <li class="hamburger-menu__item active">
+                  <a
+                    href="#"
+                    class="hamburger-menu__item-link hamburger-menu__item-link--item02"
+                    >홈
+                    <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                  </a>
+                  <ul class="hamburger-menu__sub">
+                    <li>
+                      <a href="#" class="hamburger-menu__sub_link">인기</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hamburger-menu__sub_link">코스</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hamburger-menu__sub_link">축제</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hamburger-menu__sub_link">이벤트</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hamburger-menu__sub_link">지역</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="hamburger-menu__item">
+                  <a
+                    href="#"
+                    class="hamburger-menu__item-link hamburger-menu__item-link--item03"
+                    >여행상품 홍보관</a
+                  >
+                </li>
+                <li class="hamburger-menu__item">
+                  <a
+                    href="#"
+                    class="hamburger-menu__item-link hamburger-menu__item-link--item04"
+                    >여행구독</a
+                  >
+                </li>
+              </ul>
+              <div class="avatar">
+                <img
+                  src="./assets/icons/icon-avatar.png"
+                  class="avatar__img"
+                  alt=""
+                />
+                <button class="button button--white">
+                  <strong class="avatar__text-bold">로그인</strong> 하세요
+                  <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                </button>
               </div>
             </div>
-          </div>
-          <div class="gnb__logo--pc">
-            <a href="#"><img src="./img/logo.png" alt="로고" /></a>
-          </div>
-          <div class="gnb__logo--mo">
-            <a href="#"><img src="./img/logo_m.png" alt="로고" /></a>
-          </div>
-          <div class="gnb__search">
-            <input
-              type="text"
-              class="gnb__search-box"
-              placeholder="어디로, 어떤 여행을 떠날 예정인가요?"
-            />
-            <a href="#" class="gnb__search-icon"
-              ><img src="./img/gnb_search.png" alt=""
-            /></a>
-          </div>
-          <div class="gnb__icon">
-            <a href="#"><img src="./img/gnb_map.png" alt="지도 아이콘" /></a>
+            <div class="gnb__top-logo">
+              <a href="#" class="logo__img-pc"
+                ><img
+                  src="./assets/images/logo.png"
+                  class="logo__img"
+                  alt="로고"
+              /></a>
+            </div>
+            <div class="gnb__top-logo-mobile">
+              <a href="#"
+                ><img src="./assets/images/logo_mobile.png" alt="모바일 로고"
+              /></a>
+            </div>
+            <div class="gnb__top-input-wrap">
+              <input
+                type="text"
+                class="input-wrap__input"
+                placeholder="어디로, 어떤 여행을 떠날 예정인가요?"
+              />
+              <div class="icon-magnifier input-wrap__icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="input-wrap__keyword-wrap">
+                <h2 class="input-wrap__keyword-title">어제의 인기 검색어</h2>
+                <div class="keyword">
+                  <div class="keyword__columns flex align-center">
+                    <ul class="keyword__column">
+                      <li class="keyword__item flex align-center">
+                        <span class="keyword__item-num">1</span
+                        ><a href="#" class="keyword__item-link">서울</a>
+                      </li>
+                      <li class="keyword__item flex align-center">
+                        <span class="keyword__item-num">2</span
+                        ><a href="#" class="keyword__item-link">대전</a>
+                      </li>
+                      <li class="keyword__item flex align-center">
+                        <span class="keyword__item-num">3</span
+                        ><a href="#" class="keyword__item-link">부산</a>
+                      </li>
+                      <li class="keyword__item flex align-center">
+                        <span class="keyword__item-num">4</span
+                        ><a href="#" class="keyword__item-link">겨울여행</a>
+                      </li>
+                      <li class="keyword__item flex align-center">
+                        <span class="keyword__item-num">5</span
+                        ><a href="#" class="keyword__item-link">속초</a>
+                      </li>
+                    </ul>
+                    <ul class="keyword__column keyword__column--lightgray">
+                      <li class="keyword__item flex align-center">
+                        <span class="keyword__item-num">6</span
+                        ><a href="#" class="keyword__item-link">경주</a>
+                      </li>
+                      <li class="keyword__item flex align-center">
+                        <span class="keyword__item-num">7</span
+                        ><a href="#" class="keyword__item-link">트레킹</a>
+                      </li>
+                      <li class="keyword__item flex align-center">
+                        <span class="keyword__item-num">8</span
+                        ><a href="#" class="keyword__item-link">강릉</a>
+                      </li>
+                      <li class="keyword__item flex align-center">
+                        <span class="keyword__item-num">9</span
+                        ><a href="#" class="keyword__item-link">제주</a>
+                      </li>
+                      <li class="keyword__item flex align-center">
+                        <span class="keyword__item-num">10</span
+                        ><a href="#" class="keyword__item-link">고양</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="keyword-close">
+                    <button class="keyword-close__button button">닫기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gnb__top-icon-map">
+              <a href="#"
+                ><img
+                  src="./assets/icons/icon_map.png"
+                  class="icon-map__img"
+                  alt="지도 아이콘"
+              /></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="gnb-bottom">
-        <ul class="bottom__menu">
-          <li class="bottom__menu-item"><a href="#">특집관</a></li>
-          <li class="bottom__menu-item menu-item--home">
-            <a href="#"
-              ><img src="./img/gnb_home.gif" alt="홈" /> 홈
-              <img src="./img/gnb_arrow.gif" alt="화살표" class="arrow"
-            /></a>
-            <div class="bottom__sub">
-              <ul class="bottom__submenu">
-                <li class="bottom__submenu-list"><a href="#">인기</a></li>
-                <li class="bottom__submenu-list"><a href="#">코스</a></li>
-                <li class="bottom__submenu-list"><a href="#">축제</a></li>
-                <li class="bottom__submenu-list"><a href="#">이벤트</a></li>
-                <li class="bottom__submenu-list"><a href="#">지역</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="bottom__menu-item"><a href="#">여행상품 홍보관</a></li>
-        </ul>
-      </div>
-    </header>
-  </div>
-  <body></body>
+        <div class="gnb__bottom">
+          <div class="container">
+            <ul class="gnb__bottom-menu flex align-center">
+              <li class="bottom-menu__item">
+                <a href="#" class="bottom-menu__item-link">특집관</a>
+              </li>
+              <li class="bottom-menu__item">
+                <a
+                  href="#"
+                  class="bottom-menu__item-link bottom-menu__item-link--home"
+                  >홈<i class="fa-solid fa-caret-down"></i
+                ></a>
+                <ul class="bottom-menu__dropmenu">
+                  <li>
+                    <a href="#" class="bottom-menu__dropmenu-link">인기</a>
+                  </li>
+                  <li>
+                    <a href="#" class="bottom-menu__dropmenu-link">코스</a>
+                  </li>
+                  <li>
+                    <a href="#" class="bottom-menu__dropmenu-link">축제</a>
+                  </li>
+                  <li>
+                    <a href="#" class="bottom-menu__dropmenu-link">이벤트</a>
+                  </li>
+                  <li>
+                    <a href="#" class="bottom-menu__dropmenu-link">지역</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="bottom-menu__item">
+                <a href="#" class="bottom-menu__item-link">여행상품 홍보관</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
 </html>

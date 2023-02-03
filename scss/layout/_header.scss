@@ -1,0 +1,356 @@
+// 공통 스타일
+
+.wrap {
+  font-family: "Noto Sans KR";
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.button {
+  background-color: transparent;
+  border: 0;
+  color: $color-primary;
+  cursor: pointer;
+}
+
+.container {
+  width: 940px;
+  height: 100%;
+  margin: auto;
+}
+
+// 헤더 시작
+
+.gnb__top {
+  height: 89px;
+  box-shadow: 0px 0px 6px 0px rgb(41 42 42 / 15%);
+
+  .container {
+    position: relative;
+    justify-content: space-between;
+
+    .gnb__top-hamburger {
+      font-size: 30px;
+    }
+    .gnb__top-hamburger-menu {
+      display: none;
+      position: absolute;
+      top: 89px;
+      left: 0;
+      width: 210px;
+      height: 417px;
+      background-color: #13294b;
+
+      .hamburger-menu {
+        padding: 12px 0 0;
+
+        .active {
+          position: relative;
+        }
+        .hamburger-menu__item {
+          margin-top: 5px;
+
+          .hamburger-menu__item-link {
+            display: block;
+            padding-left: 19px;
+            height: 40px;
+            line-height: 40px;
+            color: $color-white;
+            font-size: 16px;
+          }
+          .hamburger-menu__item-link::before {
+            background-image: url(../../assets/icons/icon_top-menu.png);
+            content: "";
+            display: inline-block;
+            width: 21px;
+            height: 44px;
+            margin-right: 7px;
+            vertical-align: -18px;
+          }
+          .hamburger-menu__item-link--item02 {
+            .fa-sharp {
+              opacity: 0.5;
+              font-size: 16px;
+              position: absolute;
+              top: 50%;
+              right: 20px;
+              transform: translateY(-50%);
+            }
+          }
+          .hamburger-menu__item-link--item02::before {
+            background-position: 0 -40px;
+          }
+          .hamburger-menu__item-link--item03::before {
+            background-position: 0 -240px;
+          }
+          .hamburger-menu__item-link--item04::before {
+            background-position: 0 -280px;
+          }
+          .hamburger-menu__item-link--item04::after {
+            display: inline-block;
+            content: "";
+            width: 4px;
+            height: 4px;
+            border-radius: 100%;
+            vertical-align: 12px;
+            margin-left: 6px;
+            background-color: #fb5b41;
+          }
+          .hamburger-menu__sub {
+            padding-top: 20px;
+            position: absolute;
+            left: 210px;
+            top: -62px;
+            height: 416px;
+            background-color: $color-white;
+            width: 100%;
+            border: 1px solid #f0f0f0;
+            box-shadow: inset 0px 9px 6px -9px rgb(42 42 42 / 15%);
+
+            .hamburger-menu__sub_link {
+              display: block;
+              padding-left: 19px;
+              height: 35px;
+              line-height: 35px;
+              font-size: 16px;
+            }
+            .hamburger-menu__sub_link:hover {
+              font-weight: 600;
+            }
+          }
+          .hamburger-menu__sub::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 40px;
+            background-color: #2f4f7f;
+            position: absolute;
+            top: 61px;
+            left: -1px;
+          }
+        }
+        .hamburger-menu__item.active {
+          background-color: #2f4f7f;
+        }
+        .hamburger-menu__item:hover {
+          background-color: #2f4f7f;
+        }
+      }
+      .avatar {
+        margin-top: 111px;
+        text-align: center;
+        .avatar__img {
+          margin: auto;
+          margin-bottom: 10px;
+        }
+        .avatar__text-bold {
+          font-weight: 400;
+        }
+        .button--white {
+          font-size: 16px;
+          color: $color-white;
+        }
+        .fa-sharp {
+          opacity: 0.6;
+          font-size: 13px;
+          margin-left: 3px;
+        }
+      }
+    }
+    .gnb__top-hamburger-menu.active {
+      display: block;
+    }
+    .gnb__top-logo {
+      margin-left: 43px;
+    }
+    .gnb__top-logo-mobile {
+      display: none;
+    }
+    .gnb__top-input-wrap {
+      width: 520px;
+      margin-left: 12px;
+      position: relative;
+
+      .input-wrap__input {
+        padding: 0 50px 0 20px;
+        height: 45px;
+        line-height: 45px;
+        border: 0;
+        width: 100%;
+        font-size: 16px;
+        background: #eef0f2;
+        outline: none;
+        border-radius: 10px;
+        font-family: "Noto Sans KR", sans-serif;
+      }
+      .input-wrap__input.active {
+        border: 1px solid $color-primary;
+        background-color: $color-white;
+      }
+      .input-wrap__icon {
+        // header input안에서만 사용될 스타일
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 25px;
+        cursor: pointer;
+      }
+      .icon-magnifier {
+        // 아이콘 고정 스타일 값
+        color: #7b7b7b;
+      } // --- 이해 완료 ---
+
+      .input-wrap__keyword-wrap {
+        z-index: 100;
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 55px;
+        overflow: hidden;
+        border: 1px solid $color-secondary;
+        background-color: $color-white;
+        border-radius: 10px;
+        text-align: left;
+
+        .input-wrap__keyword-title {
+          padding: 0 28px;
+          margin-top: 20px;
+          height: 33px;
+          line-height: 33px;
+          font-weight: 800;
+          font-size: 20px;
+          letter-spacing: -0.5px;
+          color: $color-primary;
+        }
+        .keyword__columns {
+          padding-bottom: 32px;
+          .keyword__column {
+            flex: 1;
+            // border: 1px solid blue;
+
+            .keyword__item {
+              padding-left: 28px;
+              margin-top: 20px;
+
+              .keyword__item-num {
+                display: block;
+                background-color: $color-secondary;
+                color: $color-white;
+                height: 20px;
+                line-height: 20px;
+                width: 20px;
+                border-radius: 3px;
+                font-size: 13px;
+                text-align: center;
+              }
+
+              .keyword__item-link {
+                margin-left: 10px;
+                width: 140px;
+                height: 20px;
+                line-height: 22px;
+                font-size: 15px;
+                font-weight: 600;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                color: $color-primary;
+              }
+            }
+          }
+          .keyword__column--lightgray {
+            .keyword__item {
+              padding-left: 0;
+              .keyword__item-num {
+                background-color: #949494;
+              }
+              .keyword__item-link {
+                color: $color-secondary;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+        .keyword-close {
+          background-color: #eef0f2;
+          width: 100%;
+          height: 33px;
+          text-align: right;
+          .keyword-close__button {
+            padding: 0 20px;
+            line-height: 33px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+.gnb__bottom {
+  height: 65px;
+  border-bottom: 1px solid #f0f0f0;
+
+  .gnb__bottom-menu {
+    height: 100%;
+
+    .bottom-menu__item {
+      height: 100%;
+      line-height: 62px;
+      flex: 1;
+      text-align: center;
+      .bottom-menu__item-link {
+        display: block;
+        font-size: 18px;
+        color: #000;
+      }
+      .bottom-menu__item-link--home {
+        position: relative;
+        padding-left: 25px;
+        font-weight: 500;
+      }
+      .bottom-menu__item-link--home::before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 19px;
+        background: url(../../assets/icons/icon_home.gif);
+        position: absolute;
+        bottom: 20px;
+        left: 125px;
+      }
+      .fa-caret-down {
+        font-size: 11px;
+        margin-left: 10px;
+        vertical-align: 2px;
+        color: $color-secondary;
+        opacity: 0.6;
+      }
+    }
+    .bottom-menu__dropmenu {
+      display: none;
+      width: 165px;
+      border: 1px solid #636363;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      background-color: $color-white;
+      margin: -62px auto 0;
+      border-radius: 5px;
+      box-shadow: 3px 3px 0px 0px rgb(51 51 51 / 21%);
+
+      .bottom-menu__dropmenu-link {
+        font-weight: 700;
+        display: block;
+        height: 35px;
+        line-height: 35px;
+        font-size: 16px;
+      }
+    }
+  }
+}

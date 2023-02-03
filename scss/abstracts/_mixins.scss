@@ -1,0 +1,34 @@
+@media (max-width: 1023px) {
+  .gnb__top {
+    height: 89px;
+    box-shadow: transparent; // 안됨
+
+    .container {
+      background-color: red;
+      width: 100%;
+
+      .gnb__top-hamburger {
+        background-color: yellow;
+        width: 100%;
+        display: block;
+        text-align: right;
+      }
+      .gnb__top-logo {
+        display: none;
+      }
+      .gnb__top-logo-mobile {
+        display: block; // 안됨
+      }
+      .gnb__top-input-wrap {
+        display: none;
+      }
+      .gnb__top-icon-map {
+        display: none;
+      }
+    }
+  }
+
+  .gnb__bottom {
+    display: none;
+  }
+}
