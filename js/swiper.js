@@ -1,5 +1,5 @@
 $(function () {
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".main-banner", {
     pagination: {
       el: ".swiper-pagination",
       type: "progressbar",

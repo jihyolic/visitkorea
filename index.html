@@ -22,17 +22,28 @@
     ></script>
   </head>
   <body>
-    <div class="wrap">
+    <div class="wrap font-noto">
       <header class="gnb">
         <div class="gnb__top">
-          <div class="container flex align-center">
+          <div class="container gnb__top-container flex items-center">
             <button class="gnb__top-hamburger button">
               <i class="fa-sharp fa-solid fa-bars"></i>
             </button>
             <div class="gnb__top-hamburger-menu">
+              <div class="hamburger-background"></div>
+              <i class="hamburger--closed fa-sharp fa-solid fa-xmark"></i>
+              <img
+                src="./assets/images/logo_mobile.png"
+                class="gnb__top-hamburger-logo"
+                alt="모바일 로고"
+              />
               <ul class="hamburger-menu">
                 <li class="hamburger-menu__item">
-                  <a href="#" class="hamburger-menu__item-link">특집관</a>
+                  <a
+                    href="#"
+                    class="hamburger-menu__item-link hamburger-menu__item-link--item01"
+                    >특집관</a
+                  >
                 </li>
                 <li class="hamburger-menu__item">
                   <a
@@ -43,19 +54,19 @@
                   </a>
                   <ul class="hamburger-menu__sub">
                     <li>
-                      <a href="#" class="hamburger-menu__sub_link">인기</a>
+                      <a href="#" class="hamburger-menu__sub-link">인기</a>
                     </li>
                     <li>
-                      <a href="#" class="hamburger-menu__sub_link">코스</a>
+                      <a href="#" class="hamburger-menu__sub-link">코스</a>
                     </li>
                     <li>
-                      <a href="#" class="hamburger-menu__sub_link">축제</a>
+                      <a href="#" class="hamburger-menu__sub-link">축제</a>
                     </li>
                     <li>
-                      <a href="#" class="hamburger-menu__sub_link">이벤트</a>
+                      <a href="#" class="hamburger-menu__sub-link">이벤트</a>
                     </li>
                     <li>
-                      <a href="#" class="hamburger-menu__sub_link">지역</a>
+                      <a href="#" class="hamburger-menu__sub-link">지역</a>
                     </li>
                   </ul>
                 </li>
@@ -113,31 +124,31 @@
               <div class="input-wrap__keyword-wrap">
                 <h2 class="input-wrap__keyword-title">어제의 인기 검색어</h2>
                 <div class="keyword">
-                  <div class="keyword__columns flex align-center">
+                  <div class="keyword__columns flex items-center">
                     <ul class="keyword__column">
-                      <li class="keyword__item flex align-center">
+                      <li class="keyword__item flex items-center">
                         <span class="keyword__item-num">1</span
                         ><a href="#" class="keyword__item-link">서울</a>
                       </li>
-                      <li class="keyword__item flex align-center">
+                      <li class="keyword__item flex items-center">
                         <span class="keyword__item-num">2</span
                         ><a href="#" class="keyword__item-link">대전</a>
                       </li>
-                      <li class="keyword__item flex align-center">
+                      <li class="keyword__item flex items-center">
                         <span class="keyword__item-num">3</span
                         ><a href="#" class="keyword__item-link">부산</a>
                       </li>
-                      <li class="keyword__item flex align-center">
+                      <li class="keyword__item flex items-center">
                         <span class="keyword__item-num">4</span
                         ><a href="#" class="keyword__item-link">겨울여행</a>
                       </li>
-                      <li class="keyword__item flex align-center">
+                      <li class="keyword__item flex items-center">
                         <span class="keyword__item-num">5</span
                         ><a href="#" class="keyword__item-link">속초</a>
                       </li>
                     </ul>
                     <ul class="keyword__column keyword__column--lightgray">
-                      <li class="keyword__item flex align-center">
+                      <li class="keyword__item flex items-center">
                         <span
                           class="keyword__item-num keyword__item-num--lightgray"
                           >6</span
@@ -147,7 +158,7 @@
                           >경주</a
                         >
                       </li>
-                      <li class="keyword__item flex align-center">
+                      <li class="keyword__item flex items-center">
                         <span
                           class="keyword__item-num keyword__item-num--lightgray"
                           >7</span
@@ -157,7 +168,7 @@
                           >트레킹</a
                         >
                       </li>
-                      <li class="keyword__item flex align-center">
+                      <li class="keyword__item flex items-center">
                         <span
                           class="keyword__item-num keyword__item-num--lightgray"
                           >8</span
@@ -167,7 +178,7 @@
                           >강릉</a
                         >
                       </li>
-                      <li class="keyword__item flex align-center">
+                      <li class="keyword__item flex items-center">
                         <span
                           class="keyword__item-num keyword__item-num--lightgray"
                           >9</span
@@ -177,7 +188,7 @@
                           >제주</a
                         >
                       </li>
-                      <li class="keyword__item flex align-center">
+                      <li class="keyword__item flex items-center">
                         <span
                           class="keyword__item-num keyword__item-num--lightgray"
                           >10</span
@@ -207,11 +218,11 @@
         </div>
         <div class="gnb__bottom">
           <div class="container">
-            <ul class="gnb__bottom-menu flex align-center">
+            <ul class="gnb__bottom-menu flex items-center">
               <li class="bottom-menu__item">
                 <a href="#" class="bottom-menu__item-link">특집관</a>
               </li>
-              <li class="bottom-menu__item">
+              <li class="bottom-menu__item bottom-menu__item--home">
                 <a
                   href="#"
                   class="bottom-menu__item-link bottom-menu__item-link--home"
@@ -242,8 +253,8 @@
           </div>
         </div>
       </header>
-      <main>
-        <div class="swiper mySwiper">
+      <main class="main">
+        <div class="swiper main-banner">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="#"
@@ -310,11 +321,43 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
-        <section class="section01">
-          <div class="section01__title">
-            <a href="#"
-              ><img src="./assets/images/data-lab.png" alt="data lab"
-            /></a>
+        <section class="section1">
+          <div class="container">
+            <div class="section1__header">
+              <div class="section1__header-img">
+                <a href="#"
+                  ><img src="./assets/images/data-lab.png" alt="탭 타이틀"
+                /></a>
+              </div>
+            </div>
+            <div class="section1__tabs tabs flex">
+              <div class="tabs__tab-list">
+                <div class="tabs__tab">
+                  <span
+                    class="tabs__tab-button tabs__tab-button01 active"
+                  ></span>
+                  <p class="tabs__tab-txt">
+                    관광 빅데이터 정보로 분석한 지역별 핫한 여행지와 맛집을
+                    소개합니다.
+                  </p>
+                </div>
+                <div class="tabs__tab">
+                  <span class="tabs__tab-button tabs__tab-button02"></span>
+                </div>
+                <div class="tabs__tab">
+                  <span class="tabs__tab-button tabs__tab-button03"></span>
+                </div>
+              </div>
+              <div class="tabs__tab-panel-list">
+                <div class="tabs__tab-panel flex">
+                  <div class="tab-panel__item tabs__tab-panel01"></div>
+                  <div class="tab-panel__item tabs__tab-panel02"></div>
+                  <div class="tab-panel__item tabs__tab-panel03"></div>
+                </div>
+                <div class="tabs__tab-panel"></div>
+                <div class="tabs__tab-panel"></div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

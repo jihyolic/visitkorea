@@ -1,6 +1,7 @@
 // base
 @import "base/reset";
 @import "base/typhography";
+@import "base/utilities";
 
 // abstracts
 @import "abstracts/variables";
@@ -13,3 +14,6 @@
 
 // layout
 @import "layout/header";
+
+// pages
+@import "pages/home";
