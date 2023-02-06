@@ -48,7 +48,7 @@
 .hamburger-background {
   display: none;
 }
-.hamburger--closed {
+.hamburger-closed {
   display: none;
   cursor: pointer;
 }
@@ -422,7 +422,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .hamburger--closed {
+  .hamburger-closed {
     display: block;
     font-size: 23px;
     color: $color-white;
