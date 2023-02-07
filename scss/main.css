@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 html,
 body,
@@ -164,7 +165,7 @@ img {
 
 .swiper {
   width: 100%;
-  height: 391.2px;
+  height: 100%;
   position: relative;
 }
 
@@ -178,7 +179,7 @@ img {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 473.4px;
   object-fit: cover;
 }
 
@@ -769,6 +770,7 @@ img {
 }
 .section1 {
   background-color: #f0f2f7;
+  height: 430px;
 }
 
 .section1__header {
@@ -795,14 +797,12 @@ img {
   height: 42px;
   border-radius: 50px;
   background-color: #fff;
+  background-repeat: no-repeat;
 }
 
-.tabs__tab-button.active {
+.tabs__tab-button01.active {
   background-color: #5558e3;
   box-shadow: 7px 11px 24px 0px rgba(85, 88, 227, 0.26);
-}
-
-.tabs__tab-button01 {
   background-position: 0 -42px;
 }
 
@@ -812,6 +812,18 @@ img {
 
 .tabs__tab-button03 {
   background-position: 0 -84px;
+}
+
+.tabs__tab-button02.active {
+  background-color: #4094f2;
+  background-position: 0 -210px;
+  box-shadow: 7px 11px 24px 0px rgba(85, 88, 227, 0.26);
+}
+
+.tabs__tab-button03.active {
+  background-color: #567ff2;
+  background-position: 0 -126px;
+  box-shadow: 7px 11px 24px 0px rgba(85, 88, 227, 0.26);
 }
 
 .tabs__tab-desc {
@@ -867,10 +879,15 @@ img {
   z-index: 5;
 }
 
+.tab__panel03--mobile {
+  display: none;
+}
+
 .tabs__tab-more {
   justify-content: flex-end;
   color: #333;
   line-height: 19px;
+  margin-top: 10px;
 }
 
 button {
@@ -888,4 +905,215 @@ button {
 
 .tab-more__icon-arrow {
   color: #333;
+}
+
+.tab-panel--ai {
+  background-color: #fff;
+  height: 235px;
+  width: 739px;
+  border-radius: 20px;
+  margin-left: 20px;
+  justify-content: center;
+  gap: 50px;
+}
+
+.tab-panel__desc-title {
+  font-size: 18px;
+  color: #000;
+  line-height: 21px;
+  line-height: 21px;
+  letter-spacing: -0.07px;
+}
+
+.tab-panel__desc-desc {
+  padding: 5px 0 19px;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  line-height: 20px;
+  color: #666;
+}
+
+.tab-panel__desc-button {
+  height: 35px;
+  line-height: 35px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #4094f2;
+  text-align: center;
+  margin-left: 2px;
+}
+
+@media (max-width: 1024px) {
+  .section1 {
+    background-color: #ebf4fe;
+    height: auto;
+    margin: 20px 0 0;
+  }
+  .section1__tabs {
+    flex-direction: column;
+  }
+  .tabs__tab-list {
+    display: flex;
+  }
+  .section1__header {
+    padding: 20px 0 17px;
+    margin: 0 15px;
+  }
+  .section1__header-img {
+    width: 360px;
+  }
+  .tabs__tab-list {
+    background-color: #fff;
+    width: 97%;
+    height: 33px;
+    margin: 0 auto 80px;
+    border-radius: 50px;
+  }
+  .tabs__tab {
+    width: 33.33%;
+    position: relative;
+  }
+  .tabs__tab-button {
+    height: 33px;
+  }
+  .tabs__tab-button01 {
+    background-image: url(../../assets/icons/icon_hotplace-mobile.png);
+    background-position: 50% 0;
+    background-size: 49px;
+    background-repeat: no-repeat;
+  }
+  .tabs__tab-button01.active {
+    background-position: 50% 100%;
+    box-shadow: none;
+  }
+  .tabs__tab-button02 {
+    background-image: url(../../assets/icons/icon_planner-mobile.png);
+    background-size: 73px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+  .tabs__tab-button02.active {
+    background-position: 54% -33px;
+    box-shadow: none;
+  }
+  .tabs__tab-button03 {
+    background-image: url(../../assets/icons/icon_ai-mobile.png);
+    background-position: 50% 0;
+    background-size: 45px;
+    background-repeat: no-repeat;
+  }
+  .tabs__tab-button03.active {
+    background-position: 50% -33px;
+    box-shadow: none;
+  }
+  .tabs__tab-desc {
+    margin-top: 15px;
+    line-height: 15px;
+    height: 30px;
+    font-size: 12px;
+    color: #333;
+    letter-spacing: -0.3px;
+    position: absolute;
+  }
+  .tabs__tab-desc01::before {
+    content: "";
+    width: 16px;
+    height: 19px;
+    background-image: url(../../assets/icons/icon_tab-house-mobile.png);
+    background-position: 0 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .tabs__tab-desc01::after {
+    content: "핫플콕콕";
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: -1px;
+  }
+  .tabs__tab-desc02::before {
+    content: "";
+    width: 16px;
+    height: 19px;
+    background-image: url(../../assets/icons/icon_tab-house-mobile.png);
+    background-position: 0 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .tabs__tab-desc02::after {
+    content: "핫플콕콕";
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: -1px;
+  }
+  .tabs__tab-desc03::before {
+    content: "";
+    width: 16px;
+    height: 19px;
+    background-image: url(../../assets/icons/icon_tab-house-mobile.png);
+    background-position: 0 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .tabs__tab-desc03::after {
+    content: "핫플콕콕";
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: -1px;
+  }
+  .tab-panel__imges {
+    flex-wrap: wrap;
+    margin: 0 auto -10px;
+  }
+  .tab-panel__item {
+    width: calc(50% - 20px);
+    height: 140px;
+    margin: auto;
+  }
+  .tab__panel03--mobile {
+    display: block;
+  }
+  .tab-panel__item-img {
+    width: 100%;
+    height: 140px;
+  }
+  .tab-panel--ai {
+    width: 876px;
+    height: 267px;
+    margin: auto;
+    flex-direction: column;
+  }
+  .tab-panel__img-map {
+    width: 20%;
+  }
 }

@@ -31,7 +31,10 @@
             </button>
             <div class="gnb__top-hamburger-menu">
               <div class="hamburger-background"></div>
-              <i class="hamburger-closed fa-sharp fa-solid fa-xmark"></i>
+              <button class="hamburger-closed button">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+              </button>
+
               <img
                 src="./assets/images/logo_mobile.png"
                 class="gnb__top-hamburger-logo"
@@ -336,19 +339,96 @@
                   <span
                     class="tabs__tab-button tabs__tab-button01 active"
                   ></span>
-                  <p class="tabs__tab-desc">
+                  <p class="tabs__tab-desc tabs__tab-desc01">
                     관광 빅데이터 정보로 분석한 지역별 핫한 여행지와 맛집을
                     소개합니다.
                   </p>
                 </div>
                 <div class="tabs__tab">
                   <span class="tabs__tab-button tabs__tab-button02"></span>
+                  <p class="tabs__tab-desc tabs__tab-desc02">
+                    관광 빅데이터 정보로 분석한 지역별 핫한 여행지와 맛집을
+                    소개합니다.
+                  </p>
                 </div>
                 <div class="tabs__tab">
                   <span class="tabs__tab-button tabs__tab-button03"></span>
+                  <p class="tabs__tab-desc tabs__tab-desc03">
+                    관광 빅데이터 정보로 분석한 지역별 핫한 여행지와 맛집을
+                    소개합니다.
+                  </p>
                 </div>
               </div>
               <div class="tabs__tab-panel-list">
+                <div class="tabs__tab-panel flex tab-panel__imges">
+                  <div class="tab-panel__item tabs__tab-panel01">
+                    <a href="#" class="tab-panel__item-link"
+                      ><img
+                        src="./assets/images/section1_hotplace01.jpg"
+                        class="tab-panel__item-img"
+                        alt="핫플레이스1"
+                      />
+                      <strong class="tab-panel__item-title"
+                        >삼척 해상케이블카</strong
+                      >
+                    </a>
+                  </div>
+                  <div class="tab-panel__item tabs__tab-panel02">
+                    <a href="#" class="tab-panel__item-link"
+                      ><img
+                        src="./assets/images/section1_hotplace02.jpg"
+                        class="tab-panel__item-img"
+                        alt="핫플레이스2"
+                      />
+                      <strong class="tab-panel__item-title"
+                        >서울 필동면옥</strong
+                      >
+                    </a>
+                  </div>
+                  <div class="tab-panel__item tabs__tab-panel03">
+                    <a href="#" class="tab-panel__item-link"
+                      ><img
+                        src="./assets/images/section1_hotplace03.jpg"
+                        class="tab-panel__item-img"
+                        alt="핫플레이스3"
+                      />
+                      <strong class="tab-panel__item-title"
+                        >청도 오마이북</strong
+                      >
+                    </a>
+                  </div>
+                  <div
+                    class="tab-panel__item tabs__tab-panel03 tab__panel03--mobile"
+                  >
+                    <a href="#" class="tab-panel__item-link"
+                      ><img
+                        src="./assets/images/section1_hotplace03.jpg"
+                        class="tab-panel__item-img"
+                        alt="핫플레이스3"
+                      />
+                      <strong class="tab-panel__item-title"
+                        >청도 오마이북</strong
+                      >
+                    </a>
+                  </div>
+                </div>
+                <div class="tabs__tab-panel tab-panel--ai flex items-center">
+                  <div class="tab-panel__img-map">
+                    <img src="./assets/images/section1_map.png" alt="지도" />
+                  </div>
+                  <div class="tab-panel__desc">
+                    <strong class="tab-panel__desc-title"
+                      >여행 계획을 고민 중이신가요?</strong
+                    >
+                    <p class="tab-panel__desc-desc">
+                      대한민국구석구석 AI콕콕 플래너로<br />취향저격 맞춤
+                      여행코스를 자동으로 만들어 보세요!
+                    </p>
+                    <a href="#" class="tab-panel__desc-button"
+                      >나만의 코스 생성 시작</a
+                    >
+                  </div>
+                </div>
                 <div class="tabs__tab-panel flex">
                   <div class="tab-panel__item tabs__tab-panel01">
                     <a href="#" class="tab-panel__item-link"
@@ -387,13 +467,11 @@
                     </a>
                   </div>
                 </div>
-                <div class="tabs__tab-panel"></div>
-                <div class="tabs__tab-panel"></div>
               </div>
             </div>
             <div class="tabs__tab-more flex">
               <button class="flex items-center">
-                오늘의 핫플콕콕 추천
+                오늘의 AI 콕콕
                 <img
                   src="./assets/icons/icon_section1-refresh.png"
                   class="tab-more__icon-refresh"
@@ -402,7 +480,9 @@
               </button>
               <a href="#"
                 >더보기
-                <i class="tab-more__icon-arrow fa-sharp fa-solid fa-chevron-right"></i>
+                <i
+                  class="tab-more__icon-arrow fa-sharp fa-solid fa-chevron-right"
+                ></i>
               </a>
             </div>
           </div>
