@@ -18,9 +18,13 @@ $(function () {
   var swiper = new Swiper(".section2-swiper", {
     slidesPerView: 4,
     spaceBetween: 8,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
-  var swiper = new Swiper(".theme-swiper", {
+  var swiper = new Swiper(".section3-swiper", {
     slidesPerView: 4,
     spaceBetween: 10,
     freeMode: true,

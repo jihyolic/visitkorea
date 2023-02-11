@@ -280,13 +280,27 @@ button {
 .section2-swiper {
   border: 3px solid cyan;
   margin-top: 50px;
+  padding: 0 15px !important;
+  position: relative;
 }
 .section2-slide {
   width: 235px !important;
 }
 .section2-slide__img {
   height: 190px !important;
-  border: 1px solid cyan;
+}
+.section2-slide__desc {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 17px 0 0;
+  text-align: left;
+  line-height: 18px;
+}
+.section2-swiper__button-next,
+.section2-swiper__button-prev {
+  position: absolute;
+  background-color: red;
+  top: 0 !important;
 }
 
 // 섹션03
@@ -340,15 +354,15 @@ button {
   border-top: 1px solid #efefef;
   border-bottom: 1px solid #efefef;
 }
-.theme-img {
+.section3-img {
   height: 230px !important;
 }
-.theme-text {
+.section3-text {
   height: 100%;
   text-align: left;
   padding: 0 20px;
 }
-.theme-text__desc {
+.section3-text__desc {
   display: block;
   font-size: 14px;
   line-height: 18px;
@@ -356,10 +370,10 @@ button {
   font-weight: 300;
   margin: 17px 0 0;
 }
-.theme-text__tags {
+.section3-text__tags {
   margin-top: 15px;
 }
-.theme-text__tag {
+.section3-text__tag {
   text-align: center;
   padding: 0 10px;
   background-color: #f0f0f0;
@@ -370,7 +384,7 @@ button {
   // overflow: hidden;
   // text-overflow: ellipsis;
 }
-.theme-bookmark {
+.section3-bookmark {
   width: 24px;
   height: 24px;
   position: absolute;
@@ -378,14 +392,6 @@ button {
   right: 0;
   background: url(../../assets/icons/icon_bookmark.png) 0 0 / 100% auto
     no-repeat;
-}
-.theme-swiper__pagination {
-  background-color: #dddbdb !important;
-  height: 2px !important;
-}
-.swiper-pagination-progressbar-fill {
-  background-color: #000 !important;
-  width: 653px !important;
 }
 
 // 미디어쿼리

@@ -222,12 +222,12 @@ img {
   color: #fff;
 }
 
-.theme-swiper {
+.section3-swiper {
   margin-top: 50px;
   padding: 0 15px !important;
 }
 
-.theme-slide {
+.section3-slide {
   width: 230px !important;
   height: 338px !important;
   border-radius: 10px;
@@ -236,14 +236,15 @@ img {
   position: relative;
 }
 
-.theme-swiper__pagination {
+.section3-swiper__pagination {
   background-color: #dddbdb !important;
   height: 2px !important;
 }
-
-.swiper-pagination-progressbar-fill {
+.section3-swiper__pagination .swiper-pagination-progressbar-fill {
   background-color: #000 !important;
-  width: 653px !important;
+  width: 553px !important;
+  transform: translate3d(0 0 0);
+  transition-duration: 0ms;
 }
 
 @media (max-width: 1024px) {
@@ -566,6 +567,8 @@ img {
 
 .gnb__bottom {
   height: 65px;
+  position: sticky;
+  top: 0;
 }
 
 .gnb__bottom-menu {
@@ -1138,6 +1141,8 @@ button {
 .section2-swiper {
   border: 3px solid cyan;
   margin-top: 50px;
+  padding: 0 15px !important;
+  position: relative;
 }
 
 .section2-slide {
@@ -1146,7 +1151,21 @@ button {
 
 .section2-slide__img {
   height: 190px !important;
-  border: 1px solid cyan;
+}
+
+.section2-slide__desc {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 17px 0 0;
+  text-align: left;
+  line-height: 18px;
+}
+
+.section2-swiper__button-next,
+.section2-swiper__button-prev {
+  position: absolute;
+  background-color: red;
+  top: 0 !important;
 }
 
 .section3 {
@@ -1203,17 +1222,17 @@ button {
   border-bottom: 1px solid #efefef;
 }
 
-.theme-img {
+.section3-img {
   height: 230px !important;
 }
 
-.theme-text {
+.section3-text {
   height: 100%;
   text-align: left;
   padding: 0 20px;
 }
 
-.theme-text__desc {
+.section3-text__desc {
   display: block;
   font-size: 14px;
   line-height: 18px;
@@ -1222,11 +1241,11 @@ button {
   margin: 17px 0 0;
 }
 
-.theme-text__tags {
+.section3-text__tags {
   margin-top: 15px;
 }
 
-.theme-text__tag {
+.section3-text__tag {
   text-align: center;
   padding: 0 10px;
   background-color: #f0f0f0;
@@ -1236,23 +1255,13 @@ button {
   white-space: nowrap;
 }
 
-.theme-bookmark {
+.section3-bookmark {
   width: 24px;
   height: 24px;
   position: absolute;
   top: 15px;
   right: 0;
   background: url(../../assets/icons/icon_bookmark.png) 0 0/100% auto no-repeat;
-}
-
-.theme-swiper__pagination {
-  background-color: #dddbdb !important;
-  height: 2px !important;
-}
-
-.swiper-pagination-progressbar-fill {
-  background-color: #000 !important;
-  width: 653px !important;
 }
 
 @media (max-width: 1024px) {

@@ -60,11 +60,11 @@
 
 // 섹션03-모바일
 
-.theme-swiper {
+.section3-swiper {
   margin-top: 50px;
   padding: 0 15px !important;
 }
-.theme-slide {
+.section3-slide {
   width: 230px !important;
   height: 338px !important;
   border-radius: 10px;
@@ -72,13 +72,15 @@
   box-shadow: 1px 1px 20px 0px rgb(158 154 153 / 32%);
   position: relative;
 }
-.theme-swiper__pagination {
+.section3-swiper__pagination {
   background-color: #dddbdb !important;
   height: 2px !important;
-}
-.swiper-pagination-progressbar-fill {
-  background-color: #000 !important;
-  width: 653px !important;
+  .swiper-pagination-progressbar-fill {
+    background-color: #000 !important;
+    width: 553px !important;
+    transform: translate3d(0 0 0);
+    transition-duration: 0ms;
+  }
 }
 
 @media (max-width: "1024px") {
