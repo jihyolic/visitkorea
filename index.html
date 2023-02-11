@@ -324,13 +324,38 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
+        <section class="section0">
+          <a href="#"
+            ><p>요즘 핫한 그곳 궁금하지 않니?</p>
+            <span>이번 주말 <span></span>여행</span>
+            <input
+              type="text"
+              class="section0__input-search"
+              placeholder="어디로, 어떤 여행을 떠날 예정인가요?"
+            />
+            <div
+              class="icon-magnifier input-wrap__icon input-wrap__icon--mobile"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </a>
+        </section>
         <section class="section1">
           <div class="container">
             <div class="section1__header">
               <div class="section1__header-img">
                 <a href="#"
-                  ><img src="./assets/images/data-lab.png" alt="탭 타이틀"
-                /></a>
+                  ><img
+                    src="./assets/images/data-lab.png"
+                    class="header-img--pc"
+                    alt="탭 타이틀"
+                  />
+                  <img
+                    src="./assets/images/data-lab-mobile.png"
+                    class="header__img--mobile"
+                    alt="탭 타이틀 모바일"
+                  />
+                </a>
               </div>
             </div>
             <div class="section1__tabs tabs flex">
@@ -398,7 +423,7 @@
                     </a>
                   </div>
                   <div
-                    class="tab-panel__item tabs__tab-panel03 tab__panel03--mobile"
+                    class="tab-panel__item tabs__tab-panel03 tab__panel--mobile"
                   >
                     <a href="#" class="tab-panel__item-link"
                       ><img
@@ -429,7 +454,7 @@
                     >
                   </div>
                 </div>
-                <div class="tabs__tab-panel flex">
+                <div class="tabs__tab-panel flex tab-panel__imges">
                   <div class="tab-panel__item tabs__tab-panel01">
                     <a href="#" class="tab-panel__item-link"
                       ><img
@@ -466,19 +491,52 @@
                       >
                     </a>
                   </div>
+                  <div
+                    class="tab-panel__item tabs__tab-panel03 tab__panel--mobile"
+                  >
+                    <a href="#" class="tab-panel__item-link"
+                      ><img
+                        src="./assets/images/section1_hotplace03.jpg"
+                        class="tab-panel__item-img"
+                        alt="핫플레이스3"
+                      />
+                      <strong class="tab-panel__item-title"
+                        >청도 오마이북</strong
+                      >
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="tabs__tab-more flex">
-              <button class="flex items-center">
-                오늘의 AI 콕콕
+              <button class="flex items-center more-button button-hot button">
+                오늘의 핫플콕콕 추천
                 <img
                   src="./assets/icons/icon_section1-refresh.png"
                   class="tab-more__icon-refresh"
                   alt="새로고침"
                 />
               </button>
-              <a href="#"
+              <a href="#" class="more-link"
+                >더보기
+                <i
+                  class="tab-more__icon-arrow fa-sharp fa-solid fa-chevron-right"
+                ></i>
+              </a>
+            </div>
+            <div class="tabs__tab-more flex more-planner">
+              <button class="flex items-center more-button button-hot"></button>
+            </div>
+            <div class="tabs__tab-more flex">
+              <button class="flex items-center more-button button-hot button">
+                오늘의 AI 콕콕 추천
+                <img
+                  src="./assets/icons/icon_section1-refresh.png"
+                  class="tab-more__icon-refresh"
+                  alt="새로고침"
+                />
+              </button>
+              <a href="#" class="more-link"
                 >더보기
                 <i
                   class="tab-more__icon-arrow fa-sharp fa-solid fa-chevron-right"
@@ -487,6 +545,497 @@
             </div>
           </div>
         </section>
+        <section class="section2">
+          <div class="container">
+            <div class="section2__row flex">
+              <div class="section2__col section2__col--n1">
+                <div class="section2__banner">
+                  <a href="#" class="section2__banner-link">
+                    <img
+                      class="section2__banner-img"
+                      src="./assets/images/section2_banner.png"
+                      alt="배너 이미지"
+                  /></a>
+                </div>
+                <div class="board">
+                  <div class="board__header">
+                    <a href="" class="board__more-link flex"
+                      ><h2 class="board__title">오늘의 여행 Issue</h2>
+                      <span class="board__title-add">+</span></a
+                    >
+                  </div>
+                  <ul class="board__list">
+                    <li class="board__item board__item--n1">
+                      <a
+                        href="#"
+                        class="flex board__item-link board__item-link--n1"
+                      >
+                        <p class="board__item-title">국립나주문화재연구소⎪</p>
+                        <p class="board__item-text">
+                          오랜 연구 성과 담은 전시홍보관 재개관
+                        </p></a
+                      >
+                    </li>
+                    <li class="board__item">
+                      <a href="#" class="flex board__item-link">
+                        <p class="board__item-title">2월 큐레이터 추천⎪</p>
+                        <p class="board__item-text">
+                          국립고궁박물관, 모란 수놓인 향주머니 공개
+                        </p></a
+                      >
+                    </li>
+                    <li class="board__item">
+                      <a href="#" class="flex board__item-link">
+                        <p class="board__item-title">2월 큐레이터 추천⎪</p>
+                        <p class="board__item-text">
+                          국립고궁박물관, 모란 수놓인 향주머니 공개
+                        </p></a
+                      >
+                    </li>
+                    <li class="board__item">
+                      <a href="#" class="flex board__item-link board">
+                        <p class="board__item-title">부산⎪</p>
+                        <p class="board__item-text">
+                          숨이 막히도록 아름다운 부산 '워케이션 거점센터' 개소!
+                        </p></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="section2__col section2__col--2">
+                <div class="swiper img-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide flex">
+                      <div class="img-grid flex">
+                        <div class="img-grid__item">
+                          <img
+                            class="img-gird__img"
+                            src="./assets/images/section2_swiper/section2_swiper01.png"
+                            alt="슬라이드1"
+                          />
+                        </div>
+                        <div class="img-grid__item">
+                          <img
+                            class="img-gird__img"
+                            src="./assets/images/section2_swiper/section2_swiper02.png"
+                            alt="슬라이드2"
+                          />
+                        </div>
+                        <div class="img-grid__item">
+                          <img
+                            class="img-gird__img"
+                            src="./assets/images/section2_swiper/section2_swiper03.png"
+                            alt="슬라이드3"
+                          />
+                        </div>
+                        <div class="img-grid__item">
+                          <img
+                            class="img-gird__img"
+                            src="./assets/images/section2_swiper/section2_swiper04.png"
+                            alt="슬라이드4"
+                          />
+                        </div>
+                      </div>
+                      <div class="img-grid img-grid__grid2 flex">
+                        <div class="img-grid__item">
+                          <img
+                            class="img-gird__img"
+                            src="./assets/images/section2_swiper/section2_swiper05.png"
+                            alt="슬라이드5"
+                          />
+                        </div>
+                        <div class="img-grid__item">
+                          <img
+                            class="img-gird__img"
+                            src="./assets/images/section2_swiper/section2_swiper06.png"
+                            alt="슬라이드6"
+                          />
+                        </div>
+                        <div class="img-grid__item">
+                          <img
+                            class="img-gird__img"
+                            src="./assets/images/section2_swiper/section2_swiper07.png"
+                            alt="슬라이드7"
+                          />
+                        </div>
+                        <div class="img-grid__item">
+                          <img
+                            class="img-gird__img"
+                            src="./assets/images/section2_swiper/section2_swiper08.png"
+                            alt="슬라이드8"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-controls">
+                    <button class="swiper-play"></button
+                    ><button class="swiper-stop"></button>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section2--mobile">
+          <!-- <div class="section2__title section__title--mobile">
+            <h3>대한민국 구석구석 추천 태그</h3>
+          </div>
+          <div class="swiper keyword-swiper">
+            <div class="swiper-wrapper keyword-wrapper">
+              <div class="swiper-slide keyword-swiper__slide active">전체</div>
+              <div class="swiper-slide keyword-swiper__slide">#여행콕콕</div>
+              <div class="swiper-slide keyword-swiper__slide">#여행구독</div>
+              <div class="swiper-slide keyword-swiper__slide">#테마여행</div>
+              <div class="swiper-slide keyword-swiper__slide">
+                #부산가볼만한곳
+              </div>
+              <div class="swiper-slide keyword-swiper__slide">#로맨틱_야경</div>
+              <div class="swiper-slide keyword-swiper__slide">
+                #한국관광품질인증업소
+              </div>
+              <div class="swiper-slide keyword-swiper__slide">
+                #제주도여행추천
+              </div>
+              <div class="swiper-slide keyword-swiper__slide">
+                #당일치기여행
+              </div>
+              <div class="swiper-slide keyword-swiper__slide">
+                #꿀잼_액티비티
+              </div>
+              <div class="swiper-slide keyword-swiper__slide">
+                #23_24한국관광100선
+              </div>
+              <div class="swiper-slide keyword-swiper__slide">
+                #반려견동반여행지
+              </div>
+              <div class="swiper-slide keyword-swiper__slide">#가족과함께</div>
+              <div class="swiper-slide keyword-swiper__slide">#역사여행</div>
+              <div class="swiper-slide keyword-swiper__slide">#아이와함께</div>
+              <div class="swiper-slide keyword-swiper__slide">#공공누리</div>
+            </div>
+          </div> -->
+          <div class="section2__title section__title--mobile">
+            <h3>취향대로 골라봐, 요즘 여행법</h3>
+          </div>
+          <div class="swiper section2-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide section2-slide">
+                <a href="#"
+                  ><img
+                    src="./assets/images/section2_swiper/section2_swiper01.png"
+                    alt="슬라이드1"
+                    class="section2-slide__img"
+                  />
+                  <p>월간 19투어가 소개하는 <br />여행지를 만나보세요😁!</p>
+                </a>
+              </div>
+              <div class="swiper-slide section2-slide">
+                <a href="#"
+                  ><img
+                    src="./assets/images/section2_swiper/section2_swiper02.png"
+                    alt="슬라이드2"
+                    class="section2-slide__img"
+                /></a>
+              </div>
+              <div class="swiper-slide section2-slide">
+                <a href="#"
+                  ><img
+                    src="./assets/images/section2_swiper/section2_swiper03.png"
+                    alt="슬라이드3"
+                    class="section2-slide__img"
+                /></a>
+              </div>
+              <div class="swiper-slide section2-slide">
+                <a href="#"
+                  ><img
+                    src="./assets/images/section2_swiper/section2_swiper04.png"
+                    alt="슬라이드4"
+                    class="section2-slide__img"
+                /></a>
+              </div>
+              <div class="swiper-slide section2-slide">
+                <a href="#"
+                  ><img
+                    src="./assets/images/section2_swiper/section2_swiper05.png"
+                    alt="슬라이드5"
+                    class="section2-slide__img"
+                /></a>
+              </div>
+              <div class="swiper-slide section2-slide">
+                <a href="#"
+                  ><img
+                    src="./assets/images/section2_swiper/section2_swiper06.png"
+                    alt="슬라이드6"
+                    class="section2-slide__img"
+                /></a>
+              </div>
+              <div class="swiper-slide section2-slide">
+                <a href="#"
+                  ><img
+                    src="./assets/images/section2_swiper/section2_swiper07.png"
+                    alt="슬라이드7"
+                    class="section2-slide__img"
+                /></a>
+              </div>
+              <div class="swiper-slide section2-slide">
+                <a href="#"
+                  ><img
+                    src="./assets/images/section2_swiper/section2_swiper08.png"
+                    alt="슬라이드8"
+                    class="section2-slide__img"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="section2__keyword"></div>
+        </section>
+        <section class="section3 section3--pc">
+          <div class="container">
+            <a href="" class="board__more-link"
+              ><h2 class="board__title">함께 떠나는 힐링 테마여행</h2>
+            </a>
+            <div class="section3__img-grid flex">
+              <div class="section3__item">
+                <div class="section3__img">
+                  <a href="#" class="section3__link"
+                    ><img
+                      src="./assets/images/section3/section3_theme01.png"
+                      alt="이미지1"
+                  /></a>
+                </div>
+                <div class="section3__text">
+                  <p>
+                    남쪽으로 떠나는 겨울 여행 <br />
+                    경남 통영에서 1박2일
+                  </p>
+                </div>
+              </div>
+              <div class="section3__item">
+                <div class="section3__img">
+                  <a href="#" class="section3__link"
+                    ><img
+                      src="./assets/images/section3/section3_theme02.png"
+                      alt="이미지2"
+                  /></a>
+                </div>
+                <div class="section3__text">
+                  <p>
+                    서울에서 즐기는 <br />
+                    문화 예술 여행
+                  </p>
+                </div>
+              </div>
+              <div class="section3__item">
+                <div class="section3__img">
+                  <a href="#" class="section3__link"
+                    ><img
+                      src="./assets/images/section3/section3_theme03.png"
+                      alt="이미지3"
+                  /></a>
+                </div>
+                <div class="section3__text">
+                  <p>
+                    스물다섯 스물하나 드라마 속 <br />
+                    전북 전주의 모습
+                  </p>
+                </div>
+              </div>
+              <div class="section3__item">
+                <div class="section3__img">
+                  <a href="#" class="section3__link"
+                    ><img
+                      src="./assets/images/section3/section3_theme04.png"
+                      alt="이미지4"
+                  /></a>
+                </div>
+                <div class="section3__text">
+                  <p>
+                    음악과 영화의 성지가 된<br />
+                    강원도 삼척의 해변
+                  </p>
+                </div>
+              </div>
+              <div class="section3__item">
+                <div class="section3__img">
+                  <a href="#" class="section3__link"
+                    ><img
+                      src="./assets/images/section3/section3_theme05.png"
+                      alt="이미지5"
+                  /></a>
+                </div>
+                <div class="section3__text">
+                  <p>
+                    차향과 바다 향이 가득한 <br />
+                    전남 보성 율포해수녹차센터
+                  </p>
+                </div>
+              </div>
+              <div class="section3__item">
+                <div class="section3__img">
+                  <a href="#" class="section3__link"
+                    ><img
+                      src="./assets/images/section3/section3_theme06.png"
+                      alt="이미지6"
+                  /></a>
+                </div>
+                <div class="section3__text">
+                  <p>
+                    가족들과 함께라 더 좋은 <br />
+                    제주도 여행 코스
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="section3--mobile">
+          <div class="section3__title section__title--mobile">
+            <h3>추천! 힐링 테마 여행♥︎</h3>
+          </div>
+          <div class="swiper theme-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide theme-slide">
+                <a href="#">
+                  <img
+                    src="./assets/images/section3/section3_theme01.png"
+                    class="theme-img"
+                    alt="슬라이드1"
+                /></a>
+                <div class="theme-text">
+                  <span class="theme-text__desc"
+                    >남쪽으로 떠나는 겨울 여행 <br />경남 통영에서 1박2일</span
+                  >
+                  <div class="theme-text__tags flex">
+                    <span class="theme-text__tag"><a href="#">#1박2일</a></span
+                    ><span class="theme-text__tag"
+                      ><a href="#">#겨울여행</a></span
+                    >
+                    <span class="theme-text__tag"
+                      ><a href="#">#통영여행</a></span
+                    >
+                  </div>
+                </div>
+                <button class="theme-bookmark"></button>
+              </div>
+              <div class="swiper-slide theme-slide">
+                <a href="#"
+                  ><img
+                    src="./assets/images/section3/section3_theme02.png"
+                    class="theme-img"
+                    alt="슬라이드2"
+                /></a>
+                <div class="theme-text">
+                  <span class="theme-text__desc"
+                    >서울에서 즐기는 <br />문화 예술 여행</span
+                  >
+                  <div class="theme-text__tags flex">
+                    <span class="theme-text__tag"
+                      ><a href="#">#서울가볼만한곳</a></span
+                    ><span class="theme-text__tag"
+                      ><a href="#">#문화예술여행</a></span
+                    >
+                  </div>
+                </div>
+                <button class="theme-bookmark"></button>
+              </div>
+              <div class="swiper-slide theme-slide">
+                <a href="#">
+                  <img
+                    src="./assets/images/section3/section3_theme03.png"
+                    class="theme-img"
+                    alt="슬라이드3"
+                  />
+                </a>
+                <div class="theme-text">
+                  <span class="theme-text__desc"
+                    >스물다섯 스물하나 드라마 속<br />전북 전주의 모습</span
+                  >
+                  <div class="theme-text__tags flex">
+                    <span class="theme-text__tag"
+                      ><a href="#">#데이트코스</a></span
+                    ><span class="theme-text__tag"
+                      ><a href="#">#공공누리</a></span
+                    >
+                    <span class="theme-text__tag"
+                      ><a href="#">#통영여행</a></span
+                    >
+                  </div>
+                </div>
+                <button class="theme-bookmark"></button>
+              </div>
+              <div class="swiper-slide theme-slide">
+                <a href="#"
+                  ><img
+                    src="./assets/images/section3/section3_theme04.png"
+                    class="theme-img"
+                    alt="슬라이드4"
+                /></a>
+                <div class="theme-text">
+                  <span class="theme-text__desc"
+                    >음악과 영화의 성지가 된<br />강원도 삼척의 해변</span
+                  >
+                  <div class="theme-text__tags flex">
+                    <span class="theme-text__tag"
+                      ><a href="#">#공공누리</a></span
+                    ><span class="theme-text__tag"
+                      ><a href="#">#추천가볼만한곳</a></span
+                    >
+                  </div>
+                </div>
+                <button class="theme-bookmark"></button>
+              </div>
+              <div class="swiper-slide theme-slide">
+                <a href="#"
+                  ><img
+                    src="./assets/images/section3/section3_theme05.png"
+                    class="theme-img"
+                    alt="슬라이드5"
+                /></a>
+                <div class="theme-text">
+                  <span class="theme-text__desc"
+                    >차향과 바다 향이 가득한<br />전남보성율포해수녹차센터</span
+                  >
+                  <div class="theme-text__tags flex">
+                    <span class="theme-text__tag"
+                      ><a href="#">#공공누리</a></span
+                    ><span class="theme-text__tag"
+                      ><a href="#">#추천가볼만한곳</a></span
+                    >
+                  </div>
+                </div>
+                <button class="theme-bookmark"></button>
+              </div>
+              <div class="swiper-slide theme-slide">
+                <a href="#"
+                  ><img
+                    src="./assets/images/section3/section3_theme06.png"
+                    class="theme-img"
+                    alt="슬라이드6"
+                /></a>
+                <div class="theme-text">
+                  <span class="theme-text__desc"
+                    >가족들과 함께라 더 좋은<br />제주도 여행 코스</span
+                  >
+                  <div class="theme-text__tags flex">
+                    <span class="theme-text__tag"
+                      ><a href="#">#가족여행</a></span
+                    ><span class="theme-text__tag"
+                      ><a href="#">#제주여행</a></span
+                    >
+                    <span class="theme-text__tag"
+                      ><a href="#">#통영여행</a></span
+                    >
+                  </div>
+                </div>
+                <button class="theme-bookmark"></button>
+              </div>
+            </div>
+            <div class="swiper-pagination theme-swiper__pagination"></div>
+          </div>
+        </div>
       </main>
     </div>
   </body>

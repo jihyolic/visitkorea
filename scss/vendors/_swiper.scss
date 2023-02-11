@@ -14,7 +14,6 @@
 .swiper-slide img {
   display: block;
   width: 100%;
-  // height: 100%;
   height: 473.4px;
   object-fit: cover;
 }
@@ -30,6 +29,56 @@
 }
 .swiper-pagination-progressbar-fill {
   background-color: white !important;
+}
+
+// 섹션02-모바일
+
+.keyword-swiper {
+  background-color: #f6f7f8;
+  height: 59px !important;
+  margin-top: 50px;
+  padding-left: 15px !important;
+}
+.keyword-swiper__slide {
+  width: auto !important;
+  height: 26px !important;
+  line-height: 23px;
+  margin: auto 5px auto auto;
+  border: 1px solid #e5e5e5;
+  color: $color-secondary;
+  background-color: $color-white;
+  font-size: 12px;
+  padding: 0 10px;
+  border-radius: 50px;
+}
+.keyword-swiper__slide.active {
+  background-color: #6f6f6f;
+  color: $color-white;
+}
+
+
+
+// 섹션03-모바일
+
+.theme-swiper {
+  margin-top: 50px;
+  padding: 0 15px !important;
+}
+.theme-slide {
+  width: 230px !important;
+  height: 338px !important;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 20px 0px rgb(158 154 153 / 32%);
+  position: relative;
+}
+.theme-swiper__pagination {
+  background-color: #dddbdb !important;
+  height: 2px !important;
+}
+.swiper-pagination-progressbar-fill {
+  background-color: #000 !important;
+  width: 653px !important;
 }
 
 @media (max-width: "1024px") {

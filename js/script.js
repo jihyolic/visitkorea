@@ -11,6 +11,7 @@ $(function () {
   var tabButton = $(".tabs__tab");
   var tabPanel = $(".tabs__tab-panel");
   var tabDesc = $(".tabs__tab-desc");
+  var moreButton = $(".tabs__tab-more");
 
   // 헤더 영역
 
@@ -45,6 +46,9 @@ $(function () {
   tabPanel.eq(0).show();
   tabDesc.hide();
   tabDesc.eq(0).show();
+  moreButton.hide();
+  moreButton.eq(0).show();
+
   tabButton.click(function () {
     var idx = $(this).index();
     tabPanel.hide();
@@ -53,5 +57,7 @@ $(function () {
     tabDesc.eq(idx).show();
     tabButton.children(tabDesc).removeClass("active");
     $(this).children(tabDesc).addClass("active");
+    moreButton.hide();
+    moreButton.eq(idx).show();
   });
 });
